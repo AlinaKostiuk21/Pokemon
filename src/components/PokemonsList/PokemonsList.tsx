@@ -1,7 +1,8 @@
 import React from 'react';
 import {PokemonCard} from "../PokemonCard/PokemonCard";
 import {SimplePokemon} from "../../react-app-env";
-import '../../App.scss'
+import '../../styles/main.scss';
+import './PokemonList.scss';
 
 interface Props {
     pokemons: SimplePokemon[],
@@ -11,7 +12,7 @@ export const PokemonsList: React.FC<Props> = (props) => {
     const { pokemons } = props;
 
     return (
-        <div className="pokemons grid__item--1-6">
+        <div className="pokemons grid__wrapper">
             {pokemons.map(pokemon => (
                 <PokemonCard pokemon={pokemon}/>
             ))}

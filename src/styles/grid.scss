@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
+
+  &__item {
+    @for $startCell from 1 through 12 {
+      @for $endCell from $startCell through 12 {
+        &--#{$startCell}-#{$endCell} {
+          grid-column: #{$startCell} / #{$endCell + 1};
+        }
+      }
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}
