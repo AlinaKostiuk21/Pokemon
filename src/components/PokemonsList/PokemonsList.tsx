@@ -14,7 +14,7 @@ export const PokemonsList: React.FC<Props> = (props) => {
     const { pokemons, onItemClick, fullPokemon } = props;
 
     return (
-        <div className="pokemons grid__wrapper grid__wrapper--mobile">
+        <div className="pokemons-list grid__wrapper grid__wrapper--mobile">
             {pokemons.map(pokemon => {
                 if (fullPokemon && pokemon.name === fullPokemon.name) {
                     return (

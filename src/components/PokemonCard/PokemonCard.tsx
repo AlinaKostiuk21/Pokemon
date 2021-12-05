@@ -62,44 +62,39 @@ export const PokemonCard: React.FC<Props> = (props) => {
 
 
     return (
-        <div className="pokemon-card" onClick={() => {
+        <div
+            className="pokemon-card"
+            onClick={() => {
             if ("url" in aPokemon) {
                 onItemClick(aPokemon.url)
             } else {
                 onItemClick(null)
             }
         }}>
-            <div className="">
+            <figure className="">
                 <img
                     src={pokemonImage}
                     alt="Pokemon"
                     className="pokemon-card__image"
                 />
-            </div>
+            </figure>
             <div className="pokemon-card__content">
                 <h4 className="pokemon-card__title">{aPokemon.name}</h4>
-                <div className="pokemon-card__abilities">
-                    <table>
-                        <tr>
-                            <td>Types</td>
-
-                            <td>{typeof pokemonTypes !== "string"
-                                ? pokemonTypes?.map(item => (<button>{item}</button>))
-                                : "???"
-                            }</td>
-                        </tr>
-                    </table>
-                    <table>
+                <div className="pokemon-card__description">
+                    <div className="pokemon-card__types types">
+                        {typeof pokemonTypes !== "string"
+                            ? pokemonTypes?.map(item => (<button className="button-type types__button">{item}</button>))
+                            : (<p className="types__not">???</p>)
+                        }
+                    </div>
+                    <table className="table">
                         <tbody>
-                            <tr>
-                                <td>Weight</td>
-                                <td>{"weight" in aPokemon ? aPokemon.weight : "???"}</td>
-                                <td>Height</td>
-                                <td>{"height" in aPokemon ? aPokemon.height : "???"}</td>
-                            </tr>
                             <tr>
                                 <td>HP</td>
                                 <td>{pokemonHp}</td>
+                                <td>Weight</td>
+                                <td>{"weight" in aPokemon ? aPokemon.weight : "???"}</td>
+
                             </tr>
                             <tr>
                                 <td>Attack</td>
