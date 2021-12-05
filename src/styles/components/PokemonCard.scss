@@ -1,6 +1,6 @@
 .pokemon-card {
-  background-color: #fff;
-  border: 3px solid #434A54;
+  background-color: $Color-main-white;
+  border: 3px solid $Color-main-gray;
   border-radius: 15px;
   padding: 20px;
 
@@ -10,7 +10,7 @@
   }
 
   &__title {
-    color: #434A54;
+    color: $Color-main-gray;
     text-transform: capitalize;
     font-size: 30px;
     margin: 20px 0 20px;
@@ -28,7 +28,7 @@
 
 .types {
   &__not {
-    color: #434A54;
+    color: $Color-main-gray;
     font-size: 18px;
   }
 
@@ -43,7 +43,7 @@
 
 .table {
   box-sizing: border-box;
-  color: #434A54;
+  color: $Color-main-gray;
   width: 100%;
   margin-bottom: 20px;
 
@@ -51,7 +51,7 @@
 
 .table td {
   border-collapse: collapse;
-  border: 1px solid #434A54;
+  border: 1px solid $Color-main-gray;
   border-radius: 5px;
   padding: 5px;
 }

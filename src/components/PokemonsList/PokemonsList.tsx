@@ -2,7 +2,6 @@ import React from 'react';
 import {PokemonCard} from "../PokemonCard/PokemonCard";
 import {FullPokemon, SimplePokemon} from "../../react-app-env";
 import '../../styles/main.scss';
-import './PokemonList.scss';
 
 interface Props {
     pokemons: SimplePokemon[],

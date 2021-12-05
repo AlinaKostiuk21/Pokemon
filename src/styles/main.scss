@@ -1,4 +1,7 @@
 @import "utils/mixins";
-@import "grid";
-@import "body";
-@import "buttons";
+@import "utils/vars";
+@import "normalize";
+@import "blocks/grid";
+@import "blocks/buttons";
+@import "components/PokemonList";
+@import "components/PokemonCard";

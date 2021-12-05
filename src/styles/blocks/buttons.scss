@@ -2,10 +2,10 @@
   margin: 30px 0;
   width: 100%;
   padding: 10px 0;
-  color: #434A54;
-  border: 2px solid #fff;
+  color: $Color-main-gray;
+  border: 2px solid $Color-main-white;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: $Color-main-white;
   transition: all 0.3s;
   font-weight: bold;
 
@@ -20,20 +20,20 @@
 }
 
 .button-type {
-  color: #fff;
+  color: $Color-main-white;
   padding: 5px 10px;
   text-transform: capitalize;
   font-size: 16px;
-  border: 2px solid #fff;
+  border: 2px solid $Color-main-white;
   border-radius: 15px;
-  background-color: #ED5564;
+  background-color: $Color-second-pink;
   transition: all 0.3s;
   font-weight: bold;
 
   &:hover {
     background-color: transparent;
-    border-color: #434A54;
-    color: #434A54;
+    border-color: $Color-main-gray;
+    color: $Color-main-gray;
   }
 
   &:active {
