@@ -29,6 +29,7 @@
 
   &:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 }
 
@@ -52,7 +53,6 @@
   color: $Color-main-gray;
   width: 100%;
   margin-bottom: 20px;
-
 }
 
 .table td {
@@ -60,4 +60,8 @@
   border: 1px solid $Color-main-gray;
   border-radius: 5px;
   padding: 5px;
+  table-layout:fixed;
+  width:20px;
+  overflow:hidden;
+  word-wrap:break-word;
 }
