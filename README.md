@@ -3,7 +3,7 @@
 [DEMO LINK](https://AlinaKostiuk21.github.io/Pokemon/)
 
 # About
-
+Pokemon React App - Pokemons Catalog 
 
 The project used technologies:
 **React.js(useState, useEffect), HTML/CSS, preprocessor SASS, BEM-methodology**.
